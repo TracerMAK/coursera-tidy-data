@@ -26,6 +26,6 @@ tidydata <- cbind(subject = subjects[,1], tidydata)
 ## Replace the activity numbers with descriptive names
 tidydata$activity <- apply(data.frame(tidydata$activity), 2, function(x) activities[x,2])
 
-## Group by subject and activity and aggregate variables with the mean
+## Group by subject and activity and aggregate variables using the mean
 tidymeans <- aggregate(tidydata[,3:81], by=list(subject=tidydata$subject, activity=tidydata$activity), FUN=mean)
 
