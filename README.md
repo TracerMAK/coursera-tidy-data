@@ -10,4 +10,6 @@ Using the [Human Activity Recognition Using Smartphones](http://archive.ics.uci.
 
 * Upon completion of this dataset a separate dataset was created using a subject/activity grouping. Each subject was paired with each activity to comprise a unique observation. Using these groupings the feature values were averaged and used for the column variables.
 
+The *data folder should contain the unzipped files and folders from the repository zip file. The script looks in this folder for the needed resources.
+
 The script does not rely on any external libraries and should be capable of running with just the base R packages.

@@ -29,3 +29,5 @@ tidydata$activity <- apply(data.frame(tidydata$activity), 2, function(x) activit
 ## Group by subject and activity and aggregate variables using the mean
 tidymeans <- aggregate(tidydata[,3:81], by=list(subject=tidydata$subject, activity=tidydata$activity), FUN=mean)
 
+## write.table(tidymeans, "tidymeans.txt", row.name=FALSE)
+
